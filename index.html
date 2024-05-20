@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>URL Shortener</h1>
+
+      <form action="http://localhost:8080/url-shortener" method="post">
+            <label for="input-url">Enter a long URL:</label>
+            <input name="url" type="text" id="input-url">
+            <button class="btn">Shorten URL</button>
+        </form>
+
+      <!-- <form>
+        <label for="input-url">Enter a long URL:</label>
+        <input type="text" id="input-url" />
+        <button class="btn">Shorten URL</button>
+      </form> -->
+
+      <div></div>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+
+    <script>
+      const btn = document.querySelector(".btn");
+      const inputEle = document.querySelector("input");
+
+      const getShortUrl = async (url) => {
+        try {
+          const data = await axios.post("http://localhost:8080/url-shortener", url);
+          console.log(data.response);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const longURL = inputEle.value;
+        getShortUrl(longURL);
+      });
+    </script> -->
+  </body>
+</html>
